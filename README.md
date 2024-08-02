@@ -38,7 +38,7 @@ public:
 			render_procedure();
 			
 			// Doing default GLFW stuff: catching window events
-			//and swapping window buffers
+			// and swapping window buffers
 			PollEvents();
 			SwapBuffers();
 		}
