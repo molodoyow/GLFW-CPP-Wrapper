@@ -20,7 +20,7 @@ int main()
 	});
 }
 ```
-![capture](https://github.com/user-attachments/assets/fee3e10e-260c-405a-ae73-ec9a097ac268)
+![screenshot](https://github.com/user-attachments/assets/a9be9e5c-d9f5-4fc4-afa1-fa11b55c9b28)
 
 ## API overview
 
