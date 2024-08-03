@@ -10,12 +10,6 @@ WindowGLFW::WindowGLFW():
 WindowGLFW::WindowGLFW(const Attributes& attributes):
 	attributes_(attributes) {};
 
-WindowGLFW::~WindowGLFW()
-{
-	glfwDestroyWindow(handle_);
-	glfwTerminate();
-}
-
 void WindowGLFW::PollEvents()
 {
 	glfwPollEvents();
@@ -156,4 +150,10 @@ void WindowGLFW::SetLimits(int min_width, int min_height, int max_width, int max
 void WindowGLFW::SetTitle(std::string_view title)
 {
 	glfwSetWindowTitle(handle_, title.data());
+}
+
+WindowGLFW::~WindowGLFW()
+{
+	glfwDestroyWindow(handle_);
+	glfwTerminate();
 }
