@@ -2,11 +2,19 @@
 #include <iostream>
 
 WindowGLFW::WindowGLFW():
-	handle_(nullptr) {};
+	handle_(nullptr) 
+{
+	glfwInit();
+};
 			
 WindowGLFW::WindowGLFW(const Attributes& attributes):
 	attributes_(attributes) {};
 
+WindowGLFW::~WindowGLFW()
+{
+	glfwDestroyWindow(handle_);
+	glfwTerminate();
+}
 
 void WindowGLFW::PollEvents()
 {
