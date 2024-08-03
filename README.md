@@ -1,4 +1,4 @@
-# C++ Wrapper for GLFW Library
+# C++20 Wrapper for GLFW Library
 
 ## Usage sample
 ```cpp
