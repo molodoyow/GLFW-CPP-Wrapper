@@ -76,6 +76,11 @@ bool WindowGLFW::IsKeyPressed(int key)
 	return glfwGetKey(handle_, key) == GLFW_PRESS;
 }
 
+bool WindowGLFW::IsMouseButtonPressed(int button)
+{
+	return glfwGetMouseButton(handle_, button) == GLFW_PRESS;
+}
+
 void WindowGLFW::Show()
 {
 	glfwShowWindow(handle_);
