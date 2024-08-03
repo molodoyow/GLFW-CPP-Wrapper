@@ -44,11 +44,11 @@ public:
 		}
 	}
 	
-	bool ShouldClose();
-	Size GetSize();
-	Position GetPosition();
-	std::string_view GetTitle();
-	std::string_view GetClipboard();
+	bool ShouldClose() const noexcept;
+	Size GetSize() const noexcept;
+	Position GetPosition() const noexcept;
+	std::string_view GetTitle() const noexcept;
+	std::string_view GetClipboard() const noexcept;
 	
 	void Show();
 	void Hide();
