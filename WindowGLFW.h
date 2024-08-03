@@ -55,6 +55,7 @@ public:
 	bool Create();		
 	
 	template<typename RenderProcedure>
+	requires std::is_invocable_v<T>
 	void Process(RenderProcedure&& render_procedure)
 	{
 		while(!ShouldClose())
