@@ -74,6 +74,7 @@ public:
 	std::string_view GetTitle() const noexcept;
 	std::string_view GetClipboard() const noexcept;
 	bool IsKeyPressed(int key);
+	bool IsMouseButtonPressed(int button);
 	
 	void Show();
 	void Hide();
