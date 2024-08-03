@@ -73,7 +73,7 @@ std::string_view WindowGLFW::GetClipboard()
 
 bool WindowGLFW::IsKeyPressed(int key)
 {
-	return glfwGetKey(handle_, key);
+	return glfwGetKey(handle_, key) == GLFW_PRESS;
 }
 
 void WindowGLFW::Show()
