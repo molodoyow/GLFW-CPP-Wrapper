@@ -41,11 +41,6 @@ public:
 		bool Maximized = false;
 	};
 	
-	operator GLFWwindow*()
-	{
-		return handle_;
-	}
-	
 	WindowGLFW(const Attributes& attributes);
 
 	void PollEvents();
