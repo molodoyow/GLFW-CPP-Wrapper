@@ -73,6 +73,7 @@ public:
 	Position GetPosition() const noexcept;
 	std::string_view GetTitle() const noexcept;
 	std::string_view GetClipboard() const noexcept;
+	bool IsKeyPressed(int key);
 	
 	void Show();
 	void Hide();
