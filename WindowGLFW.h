@@ -85,8 +85,7 @@ public:
 	void SetLimits(int min_width, int min_height, int max_width, int max_height);
 	void SetTitle(std::string_view title);
 	
-	~WindowGLFW() = default; // It is not neccessary to call glfwDestroyWindow in the WindowGLFW destructor
-	// Destructor of ContextGLFW will destroy windows automatically
+	~WindowGLFW();
 private:	
 	Attributes attributes_;
 	GLFWwindow* handle_;
